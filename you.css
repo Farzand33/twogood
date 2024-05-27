@@ -1,0 +1,576 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins ;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav #nav-part2 #links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 30px;
+}
+#icons{
+    color: #fff;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+#nav #nav-part2 #icons i{
+    font-size: 18px;
+    margin-right: 50px;
+    font-weight: 100;
+}
+
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform:translate(-50%, -50%) ;
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    padding: 0 2vw;
+    width: 100%;
+    padding-top: 15vh;
+}
+#page1 h1{
+    font-size: 17vw;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: bold;
+    line-height: 15vw; 
+    
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    /* background-color: gray; */
+    margin-top: 1vw;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    position: fixed;
+    padding: ;
+    background-color:black ;
+    color: white;
+    font-size: 1.5vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: poppins;
+    border-radius: 50%;
+    /* opacity: 100%; */
+    /* scale: 0; */
+
+}
+
+#heading2 {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#heading2 h1 {
+    font-size: 10vh;
+    margin: 0;
+    text-align: center; /* Ensure the text within h1 is centered */
+    line-height: 1.2;
+    position: relative;
+}
+
+#heading2 a {
+    font-size: 12px;
+    color: black;
+    text-decoration: underline;
+    margin: 0; /* Remove any previous margin settings */
+    text-align: center; /* Ensure the text within the link is centered */
+    line-height: 1.2;
+    position: relative;
+
+}
+#heading2::after{
+    content: "";
+    display: block;
+    width: 50%; /* Adjust width as needed */
+    height: 2px; /* Line height */
+    background-color: black; /* Line color */
+    margin-top: 10px; /* Gap between text and line */
+    position: absolute;
+    bottom: -10px; /* Adjust to position the line */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+#page2{
+    /* min-height: 100vh; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+#page2 .elm{
+    height: 100%;
+    width: 30%;
+    background-color: gray;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elm img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.5;
+}
+
+@media (max-width:600px) {
+
+    #nav{
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: gray; */
+        position: fixed;
+        z-index: 99;
+        padding: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    #nav img{
+        height: 80px;
+    }
+    #nav #nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    #nav #nav-part2 #links a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 10px;
+        margin-right: 30px;
+        display: none;
+    }
+    #icons{
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 50px;
+    }
+    #nav #nav-part2 #icons i{
+        font-size: 18px;
+        margin-right: 50px;
+        font-weight: 100;
+    }
+
+
+
+    #page1{
+       min-height: 70vh;
+        padding: 0 3vw;
+        width: 100%;
+        /* padding-top: 15vh; */
+    }
+    #page1 h1{
+        font-size: 15vw;
+     
+        line-height: -3px; 
+
+    }
+    #video-container{
+        height: 25vh;
+        width: 100%;
+        /* background-color: gray; */
+        margin-top: 3vw;
+        position: relative;
+    }
+    #page2{
+        min-height: 100vh;
+        /* height: 100vh; */
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+    }
+    #page2 .elm{
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    #page2 .elm .box{
+        height: 30px;
+        border-radius: 50px;
+        width: 70%;
+        position: absolute;
+        z-index: 9;
+        
+        background-color: palegoldenrod;
+    }
+
+    #heading2 {
+        padding: 5px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    #heading2 h1 {
+        font-size: 10vh;
+        margin: 0;
+        text-align: center; /* Ensure the text within h1 is centered */
+        line-height: 1.2;
+        position: relative;
+    }
+    
+    #heading2 a {
+        font-size: 12px;
+        color: black;
+        text-decoration: underline;
+        margin: 0; /* Remove any previous margin settings */
+        text-align: center; /* Ensure the text within the link is centered */
+        line-height: 1.2;
+        position: relative;
+    
+    }
+
+    #page4{
+        margin-top: 10px;
+        height: 300vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0%;
+    
+    }
+    #page4 img{
+      
+    }
+    
+    
+    
+    .text #heading{
+        width: 20%;
+        height: auto;
+    }
+    #heading h1{padding: 0;
+        font-size: 25px;
+        color: #fff;
+    }
+    .txt #image1 {
+        width: 5%;
+        
+    }
+    #image1 img{
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+
+    #page5 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    
+    #cnt1 {
+        width: 10%;
+        padding-left: 0px;
+    }
+    
+    #cnt1 ul {
+        list-style-type: none;
+        padding: 0;
+        
+    }
+    
+    #cnt1 li {
+        margin: 10px 0;
+       
+    }
+    #cnt1 li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #cnt2 {
+        width: 150px;
+    }
+    
+    #cnt2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-right: 0px;
+    }
+    
+    #acknowledgment {
+        margin-top: 25px;
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        /* padding: 20 20px; */
+        /* padding: 20px; */
+        padding-left: 15%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    #acknowledgment p{
+        font-size:15px ;
+        color: grey;
+    }
+
+
+}
+
+
+
+#page2 .elm .box {
+    height: 50px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: palegoldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+#page2 .elm .box:hover {
+    height: 200px;
+}
+
+#page2 .elm .box p {
+    margin: 0;
+}
+
+#page2 .elm .box i {
+    margin: 0;
+}
+
+
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 55vh;
+    width: 40vw;
+    /* background-color: gray; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    height: 100%;
+}
+.child p{
+    font-family: poppins;
+    font-size: 15px;
+    
+}
+
+
+
+
+#heading1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box;
+    position: relative; /* Added for positioning the pseudo-element */
+}
+
+#heading1 h1 {
+    color: black;
+    font-size: 5vh;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Added quotes and fallback font */
+    margin: 0;
+    text-align: center;
+    line-height: 1.2; /* Adjusted line-height for better readability */
+    position: relative; /* Added for positioning the pseudo-element */
+}
+#heading1::after {
+    content: "";
+    display: block;
+    width: 80%; /* Adjust width as needed */
+    height: 2px; /* Line height */
+    background-color: black; /* Line color */
+    margin-top: 10px; /* Gap between text and line */
+    position: absolute;
+    bottom: -10px; /* Adjust to position the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+#page4{
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0%;
+
+}
+#page4 img{
+  
+}
+
+
+
+.text #heading{
+    width: 50%;
+    height: auto;
+}
+#heading h1{padding: 0;
+    font-size: 8vh;
+    color: #fff;
+}
+.txt #image1 {
+    width: 50%;
+    
+}
+#image1 img{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#page5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#cnt1 {
+    width: 30%;
+    padding-left: 20px;
+}
+
+#cnt1 ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+#cnt1 li {
+    margin: 10px 0;
+   
+}
+#cnt1 li a{
+    text-decoration: none;
+    color: black;
+}
+
+#cnt2 {
+    width: 250px;
+}
+
+#cnt2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-right: 20px;
+}
+
+#acknowledgment {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    /* padding: 20 20px; */
+    /* padding: 20px; */
+    padding-left: 15%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+#acknowledgment p{
+    font-size:15px ;
+    color: grey;
+}
+
+
+
